@@ -1,0 +1,100 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+\usepackage{charter} % Use the Charter font for the document text
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@zfancyhead}{\fancy@reset}{\f@nch@reset}{}{}
+\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+\patchcmd{\@set@em@up}{\f@ncyorh}{\f@nch@orh}{}{}
+\makeatother
+
+% \newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+% \includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+% \makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=1pt} % Slightly decrease the height of the signature field
+\newlfmP{addrfromphone} % Print a phone number under the sender's address
+\newlfmP{addrfromemail} % Print an email address under the sender's address
+\PhrPhone{Phone} % Customize the "Telephone" text
+\PhrEmail{Email} % Customize the "E-mail" text
+
+% \lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\namefrom{Thomas Pham} % Name
+
+\addrfrom{
+\\[12pt] % Date
+Thomas Pham, \\
+48 Saint James Avenue \\ % Address
+Springvale, Victoria 3171
+}
+
+\phonefrom{+61 432 925 783} % Phone number
+
+\emailfrom{phqtuyen@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+
+\greetto{Dear Hiring Team,} % Greeting text
+\closeline{Sincerely yours,} 
+% Closing text
+
+% \nameto{Hiring Team} % Addressee of the letter above the to address
+
+% \addrto{
+% Recruitment Officer \\ % To address
+% The Corporation \\
+% 123 Pleasant Lane \\
+% City, State 12345
+% }
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+Are you searching for a software engineer with the ability to build scalable software systems with the passion for technologies, a right attitude to learning and technical innovations? If so, please consider my enclosed resume.
+
+A year of working as a software engineer at ClassCom has taught many aspects about building impactful and scalable systems. The type of skills which will make me the right candidate for your organisation. Those skills include but are not limited to high proficiency of Java, Python and Javascript, understanding practical applications of algorithms and data structures, implementing and design high-performing relational and non-relational database with SQL and MongoDB, Object Oriented Design Patterns and Principles. Prior to experience my training in Computer Science and Mathematics helped me to lay a strong foundation which enable live-long learning and the ability to cope with technological changes in a fast paced environment.
+ 
+These past journeys have not only equipped with the right technical skills but also some of valuable interpersonal skills. The opportunities to work within a diverse set of teams have taught me about self-management and time-management. Furthermore, Collaborative Problem Solving and Conflict Resolution skills were often challenged and pushed improved as a result of these experience. Working with both remote and local teams have taught me how to communicate effectively using writtern and verbal means. These are the type of skills which I believe your organisation will find valuable.
+
+Other than this, my commitment to excellence which is proven by the Wyselaskie Scholarship in Logic and various other accomplishment makes me believe that I am a right fit for your organisation.
+
+Further details about my qualifications can be found in the enclosed resume. I am looking forward to this opportunity. I thank you for your time and consideration.
+%----------------------------------------------------------------------------------------
+
+\end{newlfm}
+\end{document}
